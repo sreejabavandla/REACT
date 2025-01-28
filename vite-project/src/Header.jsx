@@ -9,6 +9,8 @@ function Header() {
           <li> <a href="#"> Home </a></li>
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">About</a></li>
+
+          <hr></hr>
         </ul>
       </nav>
     </header>
