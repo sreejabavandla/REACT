@@ -1,23 +1,50 @@
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { use } from "react";
 
 
-function MyComponent(){
+function MyComponent() {
 
   const [count, setCount] = useState(0);
 
+  const [isEmployed, setIsEmployed] = useState(false);
+
+  const [name, setName] = useState();
+
   const incrementCount = () => {
-    setCount(count+1);
+    setCount(count + 1);
   }
 
-  return(
+  const toggle = () => {
+    setIsEmployed(!isEmployed)
+  }
+
+  function handleOnChange(e) {
+    setName(e.target.value);
+  }
+
+
+
+  return (
     <div>
-      <h1>Count: {count}</h1>
+      <h2>Count: {count}</h2>
       <button onClick={incrementCount}> Increment Count </button>
+
+      <h2>Is employed?: {isEmployed ? "Yes" : "No"} </h2>
+
+      <button onClick={toggle} > Toggle Employ Status </button>
+
+      <br></br>
+
+      <input value={name} onChange={handleOnChange} />
+
+      
+
+      <h3>Hi {name}</h3>
+
     </div>
   )
-  
+
 
 
 }

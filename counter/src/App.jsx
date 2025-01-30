@@ -1,6 +1,8 @@
 
 import MyComponent from "./MyComponent";
 
+import ColourPicker from "./ColourPicker";
+
 function App() {
 
   return (
@@ -8,6 +10,7 @@ function App() {
       
       <MyComponent />
       
+      <ColourPicker/>
 
     </>
   );
