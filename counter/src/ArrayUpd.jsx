@@ -15,8 +15,15 @@ function ArrayUpd() {
 
     setFood([...food, item]);
 
+  }
+
+  function handleRemoveFood(index) {
+
+    setFood(food.filter((element, i) => i !== index))
 
   }
+
+
 
   return(
     <div>
@@ -24,7 +31,7 @@ function ArrayUpd() {
       <h2>List of Food</h2>
 
       <ol>
-        {food.map((item, index) => <li key={index}>{item}</li> ) }
+        {food.map((item, index) => <li key={index} onClick={() => handleRemoveFood(index)} >{item}</li> ) }
       </ol>
 
       <label>
