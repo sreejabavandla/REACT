@@ -3,6 +3,10 @@ import MyComponent from "./MyComponent";
 
 import ColourPicker from "./ColourPicker";
 
+import Objects from "./Objects";
+
+import ArrayUpd from "./ArrayUpd";
+
 function App() {
 
   return (
@@ -11,6 +15,10 @@ function App() {
       <MyComponent />
       
       <ColourPicker/>
+
+      <Objects/>
+
+      <ArrayUpd />
 
     </>
   );

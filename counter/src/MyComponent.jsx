@@ -12,7 +12,9 @@ function MyComponent() {
   const [name, setName] = useState();
 
   const incrementCount = () => {
-    setCount(count + 1);
+    setCount(c => c + 1);
+    setCount(c => c + 1);
+
   }
 
   const toggle = () => {
