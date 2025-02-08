@@ -7,6 +7,8 @@ import Objects from "./Objects";
 
 import ArrayUpd from "./ArrayUpd";
 
+import ArrayofObjects from "./ArrayofObjects";
+
 function App() {
 
   return (
@@ -19,6 +21,8 @@ function App() {
       <Objects/>
 
       <ArrayUpd />
+
+      <ArrayofObjects />
 
     </>
   );
