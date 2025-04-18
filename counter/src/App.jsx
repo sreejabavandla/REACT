@@ -8,11 +8,14 @@ import Objects from "./Objects";
 import ArrayUpd from "./ArrayUpd";
 
 import ArrayofObjects from "./ArrayofObjects";
+import Comp from "./Comp";
 
 function App() {
 
   return (
     <>
+
+      <Comp />
       
       <MyComponent />
       
